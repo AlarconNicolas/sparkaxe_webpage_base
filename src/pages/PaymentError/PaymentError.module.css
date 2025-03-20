@@ -1,0 +1,135 @@
+
+.PaymentErrorContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+    padding: 2rem;
+}
+
+
+.errorBox {
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 4rem 3rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+
+.iconContainer {
+    font-size: 5rem;
+    color: #d9534f; 
+    margin-bottom: 1rem;
+}
+
+.errorBox h1 {
+    font-size: 3rem;
+    color: #d9534f;
+    margin-bottom: 1rem;
+}
+
+.errorBox p {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.suggestions {
+    text-align: left;
+    background-color: #f7f7f7;
+    border: 1px solid #e0e0e0;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+}
+
+.suggestions h3 {
+    font-size: 2rem;
+    color: var(--Nanophos);
+    margin-bottom: 1rem;
+}
+
+.suggestions ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.suggestions ul li {
+    margin-bottom: 0.8rem;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.retryButton, .contactButton, .homeButton {
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.retryButton {
+    background-color: darkblue;
+    color: #ffffff;
+    border: none;
+}
+
+.retryButton:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+.contactButton {
+    background-color: var(--Hard_Color);
+    color: #ffffff;
+    border: none;
+}
+
+.contactButton:hover {
+    background-color: var(--Hard_Color);
+    transform: scale(1.05);
+}
+
+.homeButton {
+    background-color: #6c757d;
+    color: #ffffff;
+    border: none;
+}
+
+.homeButton:hover {
+    background-color: #5a6268;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .errorBox {
+        padding: 3rem 2rem;
+    }
+
+    .iconContainer {
+        font-size: 4rem;
+    }
+
+    .buttonContainer {
+        flex-direction: column;
+    }
+
+    .retryButton, .contactButton, .homeButton {
+        width: 100%;
+        text-align: center;
+    }
+}

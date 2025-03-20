@@ -1,0 +1,190 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cartpanel {
+    width: 100%;
+    background-color: var(--background);
+    padding: 2rem;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.1s ease-in-out;
+    transform: translateX(100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media (min-width: 480px) {
+    .cartpanel {
+        width: 47rem;
+
+    }
+}
+
+.cartpanel.open {
+    transform: translateX(0);
+    transition: transform 0.1s ease-in-out;
+}
+
+.closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    border-radius: .5rem;
+    cursor: pointer;
+    padding: .5rem .7rem;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.closebtn:hover {
+    background-color: color-mix(in srgb, var(--red) 70%, #000);
+}
+
+.titulo {
+    margin: 0;
+}
+
+.titulo h2 {
+    font-size: 2.6rem;
+    color: black;
+    text-align: left;
+    margin: 0;
+}
+
+.titulocategorias {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    color: gray;
+    color: color-mix(in srgb, var(--white) 50%, #000);
+}
+
+.carritoitems {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    position: relative;
+    overflow: scroll;
+}
+
+.finalcart {
+    border-top: solid 1px #393838;
+    margin: 15px;
+    color: #000000;
+}
+
+.topfinalcart {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.finalcartotal {
+    font-size: 2.5rem;
+}
+
+.finalcarcosto {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.finalcardesc {
+    font-size: 1.2rem;
+    color: #393838;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.finalcardesc p {
+    max-width: 40rem;
+}
+
+.completeorder {
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: black;
+    color: var(--white);
+    border: none;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.completeorder:hover {
+    background-color: #393838;
+
+}
+
+/* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+.carritoitems::-webkit-scrollbar {
+    width: 0;
+    /* Removes the scrollbar */
+    display: none;
+    /* Ensures it's hidden */
+}
+
+/* Hide scrollbar for Firefox */
+.carritoitems {
+    scrollbar-width: none;
+    /* Hides the scrollbar */
+}
+
+/* Internet Explorer/Edge */
+.dropdownContent {
+    -ms-overflow-style: none;
+    /* Hides scrollbar in IE/Edge */
+}
+
+.icon {
+    height: 5rem;
+    width: 5rem;
+}
+
+.carthead {
+    color: var(--Nanophos)
+}
+
+/* Close Button */
+.closebtn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem 0.7rem;
+    color: var(--red);
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.closebtn:hover {
+    background-color: color-mix(in srgb, var(--white) 70%, #000);
+    transform: scale(1.05);
+}
+
+.closebtn:active {
+    transform: scale(0.95);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}

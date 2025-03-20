@@ -1,0 +1,14 @@
+.POS{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: calc(100vh - 6rem);
+}
+.POSContent{
+    max-width: 100rem;
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

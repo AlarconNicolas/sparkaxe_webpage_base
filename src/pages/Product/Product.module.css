@@ -1,0 +1,384 @@
+.skeletons{
+    width: 95%;
+    max-width: 120rem;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+}
+.skeleton-product{
+    width: 100%;
+    min-height: 48.3rem;
+    display: flex;
+    gap: 5rem;
+    padding: 2rem;
+}
+.skeleton-image{
+    flex: 1;
+    height: 100%;
+}
+.skeleton-info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.skeleton-p{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.skeleton-cart{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.skeleton-more-info{
+    width: 100%;
+}
+.Product {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.productImage {
+    flex: 1;
+    border: solid 2px var(--gray);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.productImage:hover {
+    transform: scale(1.05);
+}
+
+.productInfo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.ProdcutName {
+    color: rgb(0, 0, 0); 
+    text-align: left;
+    margin: 0;
+    font-size: 3.6rem;
+    margin: 2rem 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.productButtonsContainer {
+    display: flex; 
+    gap: 1.5rem; 
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.Human {
+    color: var(--Nanophos);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.Ingredients {
+    all: unset;
+    background-color: var(--Main_Color);
+    cursor: pointer;
+    color: var(--white);
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.Ingredients:hover {
+    background-color: var(--Main_Hover);
+    transform: scale(1.05);
+}
+
+.Description {
+    width: 80%;
+    margin: 0;
+    color: #555; 
+    transition: color 0.3s ease-in-out;
+}
+
+.Price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    color: var(--Nanophos); 
+    transition: color 0.3s ease-in-out;
+}
+
+.Price span {
+    font-weight: normal;
+    color: #000; 
+}
+
+.productbuttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cantidad {
+    display: flex;
+    gap: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.cantidad input {
+    width: 3rem; 
+    font-size: 1.6rem;
+    text-align: center;
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 2px 10px;
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cantidad input:focus {
+    border-color: var(--Main_Color); 
+    transform: scale(1.05);
+}
+
+.cantidad button {
+    all: unset;
+    color: var(--white);
+    background-color: var(--Nanophos); 
+    border-radius: 2rem; 
+    cursor: pointer;
+    width: 3.6rem;
+    height: 3.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cantidad button:hover {
+    background-color: var(--Nanophos_Hover);
+    transform: scale(1.1);
+}
+
+.addcart {
+    all: unset;
+    background-color: var(--Nanophos);
+    cursor: pointer;
+    text-align: center;
+    color: var(--white);
+    padding: 1.2rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 40rem;
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.addcart:hover {
+    background-color: var(--Nanophos_Hover);
+    transform: translateY(-2px);
+}
+
+.agotado {
+    background-color: rgb(144, 18, 18);
+    color: white;
+    border: none;
+    padding: 1px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 400px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.heading-category {
+    max-width: 120rem;
+    margin: 7rem auto 3rem auto;
+    font-size: 3.5rem;
+    transition: margin 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.ingredients-heading {
+    font-size: 4rem;
+    margin: 0 0 3rem 0;
+    color: var(--Nanophos);
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.ingredients-content {
+    padding: 0 2rem;
+    transition: padding 0.3s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .Searchbar{
+        margin-top: 10rem;
+    }
+    .Product {
+        flex-direction: column;
+        padding: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .productImage {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .productInfo {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .ProdcutName {
+        font-size: 2.5rem;
+    }
+
+    .Description {
+        width: 100%;
+        font-size: 1.4rem;
+    }
+
+    .Price {
+        font-size: 1.6rem;
+    }
+
+    .cantidad input {
+        width: 2.5rem;
+    }
+
+    .cantidad button {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .addcart {
+        font-size: 1.4rem;
+        width: 70%;
+    }
+
+    .agotado {
+        width: 100%;
+    }
+
+    .heading-category {
+        font-size: 2.8rem;
+    }
+
+    .ingredients-heading {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .Product {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .productImage {
+        width: 40%;
+    }
+
+    .productInfo {
+        width: 55%;
+    }
+
+    .ProdcutName {
+        font-size: 3rem;
+    }
+
+    .Description {
+        font-size: 1.6rem;
+    }
+
+    .Price {
+        font-size: 1.8rem;
+    }
+
+    .cantidad input {
+        width: 3rem;
+    }
+
+    .cantidad button {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .addcart {
+        font-size: 1.6rem;
+        width: auto;
+    }
+
+    .heading-category {
+        font-size: 3.2rem;
+    }
+
+    .ingredients-heading {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .Product {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .productImage {
+        width: 40%;
+    }
+
+    .productInfo {
+        width: 55%;
+    }
+}
+/* Add these animations to your Product.module.css */
+
+.productImageAnimation {
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.productInfo {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

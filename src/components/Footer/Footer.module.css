@@ -1,0 +1,166 @@
+/* Estilos Generales del Footer */
+.Footer {
+    background-color: #f7f7f7;
+    color: var(--Nanophos);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0 2rem;
+}
+
+.FooterRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas para incluir la sección de ubicación */
+    gap: 2rem;
+    align-items: start;
+    margin: 4rem 0;
+}
+
+/* Logo */
+.logocont {
+    display: flex;
+    justify-content: center;
+    padding: 0 3rem;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Menús del Footer */
+.footermenus {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los contenidos horizontalmente */
+    text-align: center; /* Centra el texto dentro de los elementos */
+    padding: 0 2rem;
+}
+
+.footermenus h3 {
+    font-size: 2.2rem;
+    color: var(--Nanophos);
+    margin-bottom: 1rem;
+}
+
+.footermenu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footermenu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos de la lista */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    gap: 0.8rem;
+}
+
+.footermenu a {
+    cursor: pointer;
+    color: var(--Nanophos);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footermenu a:hover {
+    color: var(--Nanophos_Hover);
+    text-decoration: underline;
+}
+
+/* Redes Sociales */
+.footercontact {
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.footercontact h3 {
+    font-size: 2.2rem;
+    color: var(--Nanophos);
+    margin-bottom: 1rem;
+}
+
+.footercontact p {
+    font-size: 1.6rem;
+    color: var(--Nanophos);
+    margin-bottom: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.icons a {
+    font-size: 2rem;
+    color: var(--Nanophos);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icons a:hover {
+    color: var(--Nanophos_Hover);
+    transform: scale(1.1);
+}
+
+/* Ubicación */
+.footerLocation {
+    text-align: left;
+    padding: 0 3rem;
+}
+
+.footerLocation h3 {
+    font-size: 2.2rem;
+    color: var(--Nanophos);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footerLocation p {
+    font-size: 1.6rem;
+    color: var(--Nanophos);
+    margin-bottom: 0.2rem;
+    text-align: center;
+}
+
+/* Derechos de Autor */
+.Copyright {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+    background-color: #f7f7f7;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .FooterRow {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .logocont,
+    .footermenus,
+    .footercontact,
+    .footerLocation {
+        padding: 1rem;
+    }
+
+    .footermenus {
+        align-items: center;
+    }
+
+    .footercontact,
+    .footerLocation {
+        text-align: center;
+    }
+}

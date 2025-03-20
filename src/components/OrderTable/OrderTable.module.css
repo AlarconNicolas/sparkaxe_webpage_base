@@ -1,0 +1,121 @@
+/* General styles for the order table */
+.OrderList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scrolling for small screens */
+    overflow-y: auto; /* Allow vertical scrolling if the content overflows */
+}
+
+.table {
+    width: 100%;
+    max-width: 80rem;
+    border-collapse: collapse;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.cell-image {
+    object-fit: contain;
+}
+
+.cell-image img {
+    width: 100%;
+    height: 5rem;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.table th {
+    background-color: var(--Hard_Color);
+    color: var(--white);
+}
+
+.table th, .table td {
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.table td span {
+    font-weight: bold;
+}
+
+.OrderProduct {
+    border-bottom: 1px solid var(--Hard_Color);
+}
+
+.OrderProduct:last-child {
+    border-bottom: none;
+}
+
+td.total {
+    text-align: right;
+    font-size: 2rem;
+}
+
+/* Mobile devices (small devices first) */
+@media (max-width: 767px) {
+    .OrderList {
+        display: block;
+        width: 100%;
+        overflow-x: auto; /* Allow horizontal scrolling for small screens */
+        overflow-y: auto; /* Allow vertical scrolling if content overflows */
+        max-height: 60vh; /* Prevent the table from cutting off vertically */
+    }
+
+    .table {
+        width: 100%;
+        margin: 0;
+    }
+
+    .table th, .table td {
+        padding: 0.8rem 1rem; /* Adjust padding for small screens */
+        text-align: left;
+    }
+
+    .cell-image img {
+        width: 50px; /* Smaller images for mobile */
+        height: auto;
+    }
+
+    .table td span {
+        font-weight: normal;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .table th, .table td {
+        padding: 1rem 2rem;
+    }
+
+    .cell-image img {
+        width: 70px; /* Slightly larger images */
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1024px) {
+    .table {
+        width: 95%;
+        max-width: 80rem;
+    }
+
+    .cell-image img {
+        width: 100px; /* Larger images for larger screens */
+    }
+
+    .table td {
+        text-align: center;
+    }
+
+    td.total {
+        font-size: 2rem;
+    }
+}

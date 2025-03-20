@@ -1,0 +1,40 @@
+/* Welcome screen container */
+.WelcomeScreen {
+    position: fixed; /* Stays fixed on the screen */
+    top: 0; /* Start at the top */
+    left: 0; /* Start at the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: #8B4513; /* A rich brown color */
+    display: flex; /* Flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    z-index: 1000; /* Ensure it appears above everything else */
+    color: #fff; /* White text */
+    font-size: 3rem; /* Slightly larger text for better visibility */
+    font-weight: bold; /* Bold text */
+    font-family: "Arial", sans-serif; /* Clean font */
+    flex-direction: column; /* Arrange content in a column */
+    animation: fadeInOut 3s ease-out forwards; /* Fade in and fade out */
+}
+
+/* Fade-in and fade-out animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0; /* Start invisible */
+    }
+    20% {
+        opacity: 1; /* Fully visible after 20% of the duration */
+    }
+    80% {
+        opacity: 1; /* Stay fully visible */
+    }
+    100% {
+        opacity: 0; /* Fade out to invisible */
+    }
+}
+
+.pawIcon {
+    font-size: 5rem; /* Larger paw icon */
+    margin-bottom: 20px; /* Add space between the icon and text */
+}

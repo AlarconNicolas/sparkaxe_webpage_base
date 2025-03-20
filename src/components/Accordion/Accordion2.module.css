@@ -1,0 +1,236 @@
+.States {
+  background-color: rgb(255, 255, 255);
+  padding: 5rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logoOral {
+  width: 50%;
+  display: flex;
+  margin: 3rem 0;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--Hard_Color);
+  margin: 0;
+}
+
+.Link {
+  color: rgb(99, 97, 97);
+  text-align: center;
+  margin: 3rem 0;
+  font-weight: bold;
+}
+.Link a{
+  color: var(--Nanophos);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.Link a:hover {
+  color: var(--Nanophos_Hover);
+}
+
+.accordions{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion {
+  all: unset;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  background-color: var(--white);
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+
+  max-height: 0;
+  transition: 0.4s ease-in-out;
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-active {
+  max-height: 500rem;
+}
+
+.pos {
+  margin: 0 3rem;
+  width: 100%;
+}
+
+.pos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.pos:first-of-type {
+  margin-top: 3rem;
+}
+
+.pos:last-of-type {
+  margin-bottom: 3rem;
+}
+
+.POSmap {
+  border: solid 1px black;
+  height: 300px;
+  width: 100%;
+}
+
+.panelcontent {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  background-color: #e0e0e0;
+  padding: 2rem 4rem;
+}
+
+.logo {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.POSinfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.POSinfo h3 {
+  margin: 0 0 1rem 0;
+  font-size: 2.2rem;
+}
+
+.POSinfo p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.POSinfo p span,
+.POSinfo a span {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.POSinfo a {
+  font-size: 1.6rem;
+  color: rgb(143, 139, 139);
+  transition: ease-in-out 0.1s;
+}
+
+.POSinfo a:hover {
+  color: #000;
+  transition: ease-in-out 0.1s;
+}
+
+
+
+.break {
+  background-color: rgb(182, 178, 178);
+  width: 100%;
+  height: .7rem;
+  margin: 3rem 0;
+  border-radius: 1rem;
+}
+
+
+.veterinarias{
+  display: none;
+}
+
+.veterinarias.active{
+  display: block;
+}
+.humanos{
+  display: none;
+}
+.humanos.active1{
+  display: block;
+}
+
+.buttonhumanos.active1 {
+  background-color: var(--Nanophos_Hover); /* Aplica el color de fondo deseado */
+}
+
+.buttonhumanos{
+  background-color: var(--Nanophos);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  
+} 
+
+.buttonhumanos:hover{
+  background-color: var(--Nanophos_Hover);
+}
+
+.buttonvets{
+  background-color: var(--Nanophos);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+} 
+
+.buttonvets:hover{
+  background-color: var(--Nanophos_Hover);
+}
+
+ .buttonvets.active{
+  background-color: var(--Nanophos_Hover);
+}
+.HeadingD2{
+  display: none;
+  background-color: transparent;
+}
+
+.HeadingD2.active{
+  display: block;
+}
+
+.HeadingD1{
+  display: none;
+  background-color: transparent;
+}
+
+.HeadingD1.active1{
+  display: block;
+}

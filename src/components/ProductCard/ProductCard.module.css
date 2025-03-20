@@ -1,0 +1,243 @@
+.Product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--white);
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: var(--Hard_Color);
+  position: relative;
+}
+
+.Product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.Product h3 {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: var(--Hard_Color);
+  width: 20rem;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+
+.Product h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 80%, var(--white) 95%, var(--white) 100%);
+}
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 23rem;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.circleBackground {
+  position: absolute;
+  background: radial-gradient(circle, #01a8be, #ffffff);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 1;
+  transition: ease-in-out 2s;
+}
+
+/* Agotado Label */
+.agotadodiv {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  background-color: rgb(157, 15, 15);
+  opacity: 90%;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.buttoncontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+}
+
+.buttoncontainer p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin: 0;
+  color: var(--Hard_Color);
+}
+
+.button {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--Hard_Color);
+  color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 500;
+  transition: background-color 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    width 0.7s cubic-bezier(0.25, 0.1, 0.25, 1),
+    height 0.7s cubic-bezier(0.25, 0.1, 0.25, 1);
+  padding: 1rem;
+  box-shadow: rgba(100, 100, 111, 0.448) 0px 7px 29px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  color: var(--white);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.button:hover::after {
+  content: 'Para humanos';
+  opacity: 1;
+}
+
+.button:hover {
+  background-color: var(--Nanophos_Hover);
+  color: var(--Nanophos_Hover);
+  width: 8rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .Product {
+    padding: 1rem;
+  }
+
+  .Product h3 {
+    font-size: 1.6rem;
+    width: 18rem;
+  }
+
+  .imageContainer {
+    height: 20rem;
+    width: 22rem; /* Adjusted width for medium screens */
+  }
+
+  .circleBackground {
+    width: 120px;
+    height: 120px;
+  }
+
+  .buttoncontainer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Product {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .Product h3 {
+    font-size: 1.4rem;
+    width: 100%;
+  }
+
+  .imageContainer {
+    height: 18rem;
+    width: 20rem; /* Adjusted width for smaller screens */
+  }
+
+  .circleBackground {
+    width: 100px;
+    height: 100px;
+  }
+
+  .buttoncontainer p {
+    font-size: 1.6rem;
+  }
+
+  .button {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Product {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  .Product h3 {
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
+  .imageContainer {
+    height: 15rem;
+    width: 16rem; /* Adjusted width for extra small screens */
+  }
+
+  .circleBackground {
+    width: 80px;
+    height: 80px;
+  }
+
+  .buttoncontainer p {
+    font-size: 1.4rem;
+  }
+
+  .button {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}

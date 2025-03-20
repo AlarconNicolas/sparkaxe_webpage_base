@@ -1,0 +1,82 @@
+.Bigtable{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: var(--white);
+    max-width: 80rem;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 5rem;
+    overflow: hidden;
+}
+.OrderStatus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: column;
+    width: 100%;
+}
+.OrderStatus p{
+    margin: 0;
+}
+.heading{
+    margin: 0;
+    font-size: 2.4rem;
+}
+.small{
+    font-size: 1.4rem;
+    color: var(--dark_gray);
+}
+.small span{
+    font-weight: 700;
+}
+.address{
+    font-size: 1.6rem;
+}
+.address span{
+    font-weight: 700;
+}
+.table{
+    margin: 2rem 0;
+    width: 100%;
+ 
+}
+.contact{
+    font-size: 1.6rem;
+}
+.contact a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--black);
+}
+.contact a:hover{
+    color: var(--Nanophos);
+}
+.DelvDate{
+    background-color: var(--Nanophos);
+    width: 150%;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}
+
+.CancelDiv{
+    background-color: rgb(126, 0, 0);
+    width: 150%;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}
+
+.CompleteDiv{
+    background-color: rgb(7, 65, 2);
+    width: 150%;
+    text-align: center;
+    padding: 1rem 0;
+    color: white;
+}

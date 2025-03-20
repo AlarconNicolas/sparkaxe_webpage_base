@@ -1,0 +1,100 @@
+.Paybutton {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center button content vertically */
+    margin: 2rem;
+    width: 20%; /* Default width for larger screens */
+    text-decoration: none;
+    background-color: var(--Nanophos);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: auto; /* Centers the button horizontally */
+    margin-right: auto; /* Centers the button horizontally */
+}
+
+.Paybutton:hover {
+    background-color: var(--Nanophos_Hover);
+}
+
+@media (max-width: 480px) {
+    .Paybutton {
+        width: 60%; /* For smaller screens */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .Paybutton {
+        width: 30%; /* For medium screens */
+    }
+}
+
+@media (min-width: 769px) {
+    .Paybutton {
+        width: 15%; /* For larger screens */
+    }
+}
+
+.price {
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    margin-right: 2rem;
+}
+
+.price span {
+    font-weight: normal;
+}
+
+.goback {
+    margin: 20px;
+    background-color: #eae5e5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    width: 9rem;
+}
+
+.goback:hover {
+    background-color: #d3d3d3;
+    cursor: pointer;
+}
+
+.Heading {
+    display: flex;
+    font-size: 4.9rem;
+    justify-content: center;
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.OrderDone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: var(--Nanophos);
+    width: 60%;
+    padding: 2rem;
+    margin: auto;
+    color: white;
+    animation: fadeInScale 0.8s ease-in-out;
+}
+
+.Receipt {
+    width: 150px;
+}

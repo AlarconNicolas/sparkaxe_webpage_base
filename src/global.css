@@ -1,0 +1,114 @@
+/******************* Fonts *************************/
+@font-face {
+    font-family: 'Frontage';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('Frontage'), url('./assets/Frontage.woff2') format('woff2'),
+      url('./assets/fonts/Frontage.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Frontage';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: local('Frontage-Bold'), url('./assets/Frontage-Bold.woff2') format('woff2'),
+      url('./assets/fonts/Frontage-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'WindowDressingJNL';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: local('WindowDressingJNL'), url('./assets/fonts/WindowDressingJNL.woff2') format('woff2'),
+      url('./assets/fonts/WindowDressingJNL.ttf') format('truetype');
+}
+
+
+
+:root {
+    /* Media Queries Breakpoints */
+    --phone: 480px;
+    --tablet: 768px;
+    --desktop: 1024px;
+    --xl_desktop: 1450px;
+
+    /* Elibaba Colors */
+    --Main_Color: #687993;
+    --Main_Hover: #454e5d;
+    --Hard_Color: #1e7125;
+    --Hard_Hover: #405a78;
+    --background: #ffffff;
+
+    --Nanophos:#1e7125;
+    --Nanophos_Hover:#134217;
+
+    /* General Colors */
+    --white: #FCFFFC;
+    --gray: #E5E5E5;
+    --dark_gray: #7C7C7C;
+
+    --blue: #0c588a;
+    --sky-blue: #1a85e9;
+
+
+    --red: #990000;
+    --green: #00a100;
+    --yellow: #eac704;
+
+
+    /* Fonts Sizes */
+
+    /* Fonts Weights */
+    --thin: 300;
+    --regular: 400;
+    --bold: 700;
+    --black: 900;
+
+    /* Fonts Families */
+    --primary: 'Frontage', sans-serif;
+    --secondary: 'WindowDressingJNL', sans-serif;
+    --text: 'Open Sans', sans-serif;
+
+    /* General Styles */
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--primary);
+    font-weight: 400;
+    letter-spacing: -5px;
+}
+
+body {
+    font-size: 1.8rem;
+    height: 100vh;
+    margin: 0;
+    font-family: var(--text);
+    background-color: var(--background);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+  

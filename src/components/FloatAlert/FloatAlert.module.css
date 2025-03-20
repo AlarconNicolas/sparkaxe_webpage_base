@@ -1,0 +1,43 @@
+.alert {
+    position: fixed;
+    top: 10rem;
+    right: 20%;
+    z-index: 1000;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.25s forwards,  0.5s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-1000%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-1000%);
+    }
+}
+
+.error{
+    background-color: var(--red);
+}
+
+.success{
+    background-color: var(--green);
+}

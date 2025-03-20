@@ -1,0 +1,205 @@
+.AboutPetsHome {
+    max-width: 120rem;
+    width: 95%;
+    border: solid 1px #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Default shadow for the container */
+    background-color: #bca29d;
+    margin: 10rem auto;
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.AboutPetsHome:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.AboutPetsHomeHead {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8a544a;
+    height: 5rem;
+    color: var(--white);
+    font-weight: 700;
+    margin: 2rem 0;
+    font-size: 3rem;
+}
+
+.AboutPetsHomeContent {
+    display: flex;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.Petinfo {
+    width: 50%;
+    display: flex;
+    color: var(--white);
+    font-size: 4rem;
+    position: relative;
+}
+
+
+.PetinfoText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 2rem;
+    width: calc(100% - 22rem);
+}
+.PetinfoText h3 {
+    font-family: var(--primary);
+    letter-spacing: -7px;
+    line-height: 1.1;
+    font-size: 4.5rem;
+    margin: 0;
+    text-align: left;
+}
+
+.PetinfoText p{
+    padding: 1rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: var(--secondary);
+}
+
+.CatDog {
+    height: 30rem;
+    width: 30rem;
+    align-items: end;
+    position: absolute;
+    bottom: 0;
+    right: -6rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    z-index: 0;
+}
+
+.AboutPetsHome:hover .Logo {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 8px 12px rgba(0, 0, 0, 0.8)); /* Stronger shadow */
+}
+
+.GridPets {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 0 4rem;
+    z-index: 1;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .AboutPetsHome {
+        margin: 5rem auto; /* Reduced margin */
+    }
+
+    .AboutPetsHomeHead {
+        font-size: 2.5rem; /* Reduced font size */
+        height: 4rem; /* Adjusted height */
+    }
+
+    .AboutPetsHomeContent {
+        flex-direction: column; /* Stacks content vertically */
+        gap: 1.5rem; /* Reduced gap */
+    }
+
+    .Petinfo {
+        width: 100%; /* Full width */
+        font-size: 3rem; /* Smaller font size */
+        position: relative;
+    }
+
+    .Petinfo h3 {
+        font-size: 2rem; /* Adjusted font size */
+        padding: 0 0 0 2rem; /* Adjust padding */
+        width: calc(100% - 10rem); /* Adjust width */
+    }
+
+    .Logo {
+        height: 20rem;
+        width: 20rem;
+        right: 2rem;
+        top: 0;
+        transform: translateY(-100%);
+    }
+    .AboutPetsHome:hover .Logo {
+        transform: scale(1.1) translateY(-100%);
+    }
+
+    .GridPets {
+        padding: 0 2rem; /* Reduced padding */
+        grid-template-columns: repeat(1, 1fr); /* Single column grid */
+        gap: 2rem; /* Reduced gap */
+    }
+}
+
+@media (max-width: 768px) {
+    .AboutPetsHomeHead {
+        font-size: 2rem; /* Smaller font size */
+        height: 3.5rem; /* Adjusted height */
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0 2rem; 
+    }
+
+    .Petinfo {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .Petinfo h3 {
+        font-size: 1.8rem; /* Adjusted font size */
+        width: 100%; /* Full width */
+        padding: 0 0 0 2rem; /* Adjust padding */
+    }
+
+    .CatDog {
+        height: 18rem;
+        width: 18rem;
+        right: 2rem;
+        top: 0;
+        transform: translateY(-100%);
+    }
+    .AboutPetsHome:hover .Logo {
+        transform: scale(1.1) translateY(-100%);
+    }
+
+    .GridPets {
+        padding: 0 1rem; /* Reduced padding */
+        grid-template-columns: repeat(1, 1fr); /* Single column grid */
+        gap: 1.5rem; /* Reduced gap */
+    }
+}
+
+@media (max-width: 480px) {
+    .AboutPetsHomeHead {
+        font-size: 1.6rem; /* Further reduced font size */
+        height: 3rem; /* Adjusted height */
+        justify-content: center;
+    }
+
+    .Petinfo {
+        font-size: 2rem; /* Adjust font size */
+    }
+
+    .Petinfo h3 {
+        font-size: 1.6rem; /* Adjusted font size */
+        width: 100%; /* Full width */
+        padding: 0 0 0 1.5rem; 
+    }
+
+    .Logo {
+        display: none;
+    }
+
+    .GridPets {
+        padding: 0 1rem; /* Reduced padding */
+        grid-template-columns: repeat(1, 1fr); /* Single column grid */
+        gap: 1rem; /* Reduced gap */
+    }
+}

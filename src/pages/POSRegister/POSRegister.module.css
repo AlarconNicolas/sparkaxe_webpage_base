@@ -1,0 +1,132 @@
+/* Global Container */
+.contactContainer {
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+  min-height: 100vh;
+}
+
+
+
+/* Info Section */
+.infoSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.infoBox {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoBox:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.infoBox h2 {
+  font-size: 1.8rem;
+  color: #2a3f54;
+  margin-bottom: 15px;
+}
+
+.infoBox p {
+  font-size: 1.1rem;
+  color: #5a6b79;
+}
+
+/* Contact Form */
+.contactForm {
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.contactForm:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Label */
+.label {
+  font-size: 1.3rem;
+  color: #2a3f54;
+  margin-bottom: 12px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input and Textarea */
+.input, .textarea {
+  padding: 15px;
+  font-size: 1rem;
+  border: 2px solid #dce1e6;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  transition: border-color 0.3s ease;
+}
+
+.input:focus, .textarea:focus {
+  border-color: #2a3f54;
+  outline: none;
+}
+
+.textarea {
+  height: 160px;
+  resize: none;
+}
+
+/* Button */
+.button {
+  padding: 18px 40px;
+  background-color: var(--Hard_Color);
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  align-self: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--Hard_Hover);
+  transform: translateY(-3px);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contactContainer h2{
+    font-size: 3rem;
+  }
+
+  .infoSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infoBox {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .contactForm {
+    width: 90%;
+  }
+}

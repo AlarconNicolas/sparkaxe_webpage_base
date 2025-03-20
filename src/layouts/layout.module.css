@@ -1,0 +1,11 @@
+/* Layout.module.css */
+.content {
+    padding-top: 6rem; /* Adjust to match the height of the navbar */
+    opacity: 0;
+}
+
+.contentAppear {
+    opacity: 1;
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in; /* Updated to ease-in */
+
+}

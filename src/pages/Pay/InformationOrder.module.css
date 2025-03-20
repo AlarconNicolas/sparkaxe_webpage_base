@@ -1,0 +1,167 @@
+.page {
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto 5rem auto;
+  padding: 3rem 0;
+}
+.OrderDonebig {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.Heading {
+  display: flex;
+  font-size: 3.6rem;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.Paymentpage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 120rem;
+  width: 95%;
+  margin: 0 auto 5rem auto;
+}
+
+@media (min-width: 480px) {
+  .Paymentpage {
+    flex-direction: row;
+    align-items: unset;
+  }
+}
+
+.imgpay {
+  width: 80%;
+  padding: 2rem 0;
+  background-color: #30363f;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+}
+
+@media (min-width: 280px) {
+  .imgpay {
+    width: 40%;
+    padding: 0;
+  }
+}
+
+.imgpay img {
+  width: 40%;
+}
+
+.Paymentdiv {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex: 1;
+  padding: 3rem 0;
+}
+
+@media (min-width: 480px) {
+  .Paymentdiv {
+    padding: 3rem 5rem;
+  }
+}
+
+.FormPay {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 1.6rem;
+  color: #555;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select,
+.p-disabled-input {
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 100%;
+  font-family: inherit;
+}
+
+.formGroup textarea {
+  resize: none;
+  min-height: 10rem;
+}
+
+.formGroup textarea::placeholder {
+  font-size: 1.4rem;
+  letter-spacing: 0;
+}
+
+.p-disabled-input {
+  opacity: 0.5;
+  cursor: not-allowed;
+  margin: 0;
+  user-select: none;
+}
+
+.formGroup input:focus {
+  border-color: #000;
+}
+
+.required {
+  position: relative;
+  width: fit-content;
+}
+
+.required::before {
+  color: var(--red);
+  content: "*";
+  right: -1rem;
+  position: absolute;
+}
+
+.Paybutton {
+  text-decoration: none;
+  background-color: var(--Hard_Color);
+  color: var(--white);
+  width: fit-content;
+  align-self: flex-end;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.PaybuttonBack {
+  align-self: flex-start;
+}
+
+.virtualWindow {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-align: center;
+}

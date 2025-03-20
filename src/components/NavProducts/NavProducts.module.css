@@ -1,0 +1,94 @@
+.Searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+}
+
+.Searchbar input{
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    width: 30rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: var(--white);
+    border: 1px solid var(--background);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.containcategories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Make the grid responsive */
+    gap: 10px; /* Provide consistent gap between buttons */
+    justify-content: center; /* Center grid items horizontally */
+    align-items: center; /* Center grid items vertically */
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%; /* Set max width for centering */
+    
+}
+
+
+.Linkcategory {
+    text-decoration: none;
+    color: inherit; /* Inherit color from the button */
+    margin: 0;
+    display: block; /* Make the link behave like a block element */
+    width: 100%; /* Ensures the link wraps the button fully */
+}
+
+.categoryimg {
+    background-color: var(--Nanophos);
+    border: none;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem; /* Adjust padding for better circle size */
+    border-radius: 50%; /* Makes it circular */
+    text-align: center;
+    width: 10rem;  /* Set a fixed width for a circle */
+    height: 10rem; /* Set a fixed height equal to width for a circle */
+}
+
+.category:hover .categoryimg{
+    background-color:var(--Nanophos_Hover);
+    border: solid 5px rgb(147, 146, 146);
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 1rem;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.godiv{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+.goback{
+    margin: 20px;
+    background-color: #eae5e5;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color:var(--Hard_Color);
+    font-weight: bold;
+    width: 9rem;
+    border: 1px solid var(--background);
+
+}
+
+.goback:hover{
+    background-color: #d3d3d3;
+    cursor: pointer;
+}

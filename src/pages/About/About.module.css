@@ -1,0 +1,143 @@
+.About {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 7rem auto;
+    max-width: 70rem;
+}
+
+.heading {
+    font-size: 4rem;
+    text-align: center;
+    color: var(--Hard_Color);
+    margin: 0;
+}
+
+.subheading {
+    margin: 3rem 0;
+    font-size: 3.6rem;
+}
+
+.AboutContent {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.AboutContent h3 {
+    font-size: 2.5rem;
+    color: var(--Nanophos_Hover);
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.AboutContent p {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    color: var(--Nanophos_Hover);
+    line-height: 1.5;
+}
+
+.AboutContent span {
+    font-weight: bold;
+    color: var(--Hard_Color);
+}
+
+.Awards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin: 3rem 0;
+    width: 100%;
+}
+
+.AboutImg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.AboutImg p {
+    font-size: 2.4rem;
+    color: var(--Nanophos_Hover);
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.AboutImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.imgF {
+    filter: brightness(0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .About {
+        margin: 5rem auto;
+        max-width: 90%;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .subheading {
+        font-size: 3rem;
+    }
+
+    .AboutContent h3 {
+        font-size: 2rem;
+    }
+
+    .AboutContent p {
+        font-size: 1.4rem;
+    }
+
+    .Awards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .AboutImg img {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .About {
+        margin: 3rem auto;
+        max-width: 90%;
+    }
+
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .subheading {
+        font-size: 2.8rem;
+    }
+
+    .AboutContent h3 {
+        font-size: 1.8rem;
+    }
+
+    .AboutContent p {
+        font-size: 1.4rem;
+    }
+
+    .Awards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .AboutImg img {
+        max-width: 60%;
+    }
+}

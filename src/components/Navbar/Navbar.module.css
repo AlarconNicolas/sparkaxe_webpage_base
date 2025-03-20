@@ -1,0 +1,214 @@
+/* Navbar Styles */
+.navbar {
+  background-color: var(--Hard_Color);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin: 0 auto;
+  max-width: 120rem;
+}
+.activeLink {
+  color: var(--Nanophos_Hover) !important;
+}
+
+
+.logocont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+}
+
+.logo {
+  filter: brightness(0) invert(1);
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLinks a {
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.1s ease-in-out;
+}
+
+.navLinks a:hover {
+  color: var(--Nanophos_Hover);
+  transition: all 0.1s ease-in-out;
+}
+
+.navLinksF {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.navLinksF a, .logout {
+  color: var(--white);
+  font-size: 1.8rem;
+}
+
+.navLinksF a:hover, .logout:hover {
+  color: var(--Nanophos_Hover);
+}
+
+.logout {
+  position: relative;
+}
+
+.hover-box {
+  position: absolute;
+  top: 100%;
+  right: 50%;
+  transform: translateX(50%);
+  width: 15rem;
+  display: none;
+}
+
+.logout:hover .hover-box, .hover-box:hover {
+  display: block;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.logout-button button {
+  all: unset;
+  color: var(--Hard_Color);
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.logout-button button:hover {
+  color: var(--white);
+  background-color: var(--Nanophos_Hover);
+}
+
+.cartbutton {
+  all: unset;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.4rem;
+  background-color: var(--Nanophos_Hover);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+.cartbutton:hover {
+  background-color: var(--white);
+  color: var(--Hard_Color);
+}
+.cartbutton .icon{
+  position: relative;
+}
+.cartlength{
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 1rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-signup-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.login-signup-button button {
+  all: unset;
+  color: var(--Hard_Color);
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 150%;
+  padding: 1rem;
+}
+
+.login-signup-button button:hover {
+  color: var(--white);
+  background-color: var(--Nanophos_Hover);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .mobile-menu-toggle{
+    margin-bottom: 1rem;
+  }
+  .navLinks {
+    display: none; /* Hide regular nav links on mobile */
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-menu-toggle {
+    display: block; /* Show hamburger menu icon */
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--white);
+  }
+
+  .navLinks.active {
+    display: flex; /* Display the mobile menu when active */
+  }
+}
+
+/* Laptop/Desktop Styles */
+@media (min-width: 769px) {
+  .mobile-menu-toggle {
+    display: none; /* Hide the hamburger menu on desktop */
+  }
+}
+

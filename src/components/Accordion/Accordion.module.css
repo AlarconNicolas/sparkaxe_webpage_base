@@ -1,0 +1,455 @@
+/* Base Styles (for larger screens) */
+
+.States {
+  background-color: rgb(255, 255, 255);
+  padding: 5rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  display: flex;
+  max-width: 100rem;
+  flex-direction: column;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logoOral img {
+  width: 50%;
+}
+
+.heading {
+  font-size: 4rem;
+  text-align: center;
+  color: var(--Hard_Color);
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.Link {
+  color: rgb(99, 97, 97);
+  text-align: center;
+  margin: 3rem 0;
+  font-weight: bold;
+}
+
+.Link a {
+  color: var(--Nanophos);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.Link a:hover {
+  color: var(--Nanophos_Hover);
+}
+
+.accordion {
+  all: unset;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  background-color: var(--white);
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+  max-height: 0; 
+  opacity: 0;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-active {
+  max-height: 500rem;
+  opacity: 1;
+}
+
+
+.pos {
+  margin: 0 3rem;
+}
+
+.pos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.POSmap {
+  border: solid 1px black;
+  height: 300px;
+  width: 100%;
+}
+
+.panelcontent {
+  display: flex;
+  width: 100%;
+  gap: 4rem;
+  background-color: #e0e0e0;
+  padding: 2rem 4rem;
+}
+
+.logo {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.POSinfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  color: rgb(0, 0, 0);
+  margin-bottom:3rem 0;;
+}
+
+.POSinfo h3 {
+  margin: 0 0 1rem 0;
+  font-size: 2.2rem;
+}
+
+.POSinfo p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.POSinfo p span,
+.POSinfo a span {
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+}
+
+.POSinfo a {
+  font-size: 1.6rem;
+  color: rgb(143, 139, 139);
+  transition: ease-in-out 0.1s;
+}
+
+.POSinfo a:hover {
+  color: #000;
+  transition: ease-in-out 0.1s;
+}
+
+.break {
+  background-color: rgb(182, 178, 178);
+  width: 100%;
+  height: .7rem;
+  border-radius: 1rem;
+}
+
+.veterinarias {
+  display: none;
+}
+
+.veterinarias.active {
+  display: block;
+}
+
+.humanos {
+  display: none;
+}
+
+.humanos.active1 {
+  display: block;
+}
+
+.buttonhumanos.active1 {
+  background-color: var(--Nanophos_Hover);
+}
+
+.POStypes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+.buttonhumanos,
+.buttonvets {
+  background-color: var(--Nanophos);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.buttonhumanos:hover,
+.buttonvets:hover {
+  background-color: var(--Nanophos_Hover);
+}
+
+.buttonvets.active {
+  background-color: var(--Nanophos_Hover);
+}
+
+.HeadingD2 {
+  display: none;
+  background-color: transparent;
+}
+
+.HeadingD2.active {
+  display: block;
+}
+
+.HeadingD1 {
+  display: none;
+  background-color: transparent;
+}
+
+.HeadingD1.active1 {
+  display: block;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
+  .States {
+    padding: 4rem 2rem;
+  }
+
+  .heading {
+    font-size: 3rem;
+  }
+
+  .POSinfo h3 {
+    font-size: 2rem;
+  }
+
+  .POSinfo p {
+    font-size: 1.4rem;
+  }
+
+  .POSinfo a {
+    font-size: 1.4rem;
+  }
+
+  .panelcontent {
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    
+  }
+
+  .logo {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading {
+    font-size: 2.5rem;
+    flex-direction: column;
+  }
+
+  .POSmap {
+    height: 200px;
+  }
+
+  .panelcontent {
+    flex-direction: column;
+    padding: 2rem 2rem;
+    gap: 2rem;
+  }
+
+  .logo {
+    width: 20rem;
+  }
+
+  .buttonhumanos,
+  .buttonvets {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .POSinfo h3 {
+    font-size: 1.8rem;
+  }
+
+  .POSinfo p {
+    font-size: 1.4rem;
+  }
+
+  .POSinfo a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logoOral img {
+    width: 60%;
+  }
+
+  .heading {
+    font-size: 2rem;
+  }
+
+  .POSmap {
+    height: 150px;
+  }
+
+  .panelcontent {
+    padding: 1.5rem 2rem;
+  }
+
+  .logo {
+    width: 18rem;
+  }
+
+  .buttonhumanos,
+  .buttonvets {
+    padding: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .POSinfo h3 {
+    font-size: 1.6rem;
+  }
+
+  .POSinfo p {
+    font-size: 1.4rem;
+  }
+
+  .POSinfo a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .States {
+    padding: 3rem 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    gap: 0.5rem;
+  }
+
+  .POSmap {
+    height: 150px;
+  }
+
+  .panelcontent {
+    padding: 1.5rem;
+    margin: 0rem;
+
+  }
+
+  .logoOral {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  .buttonhumanos,
+  .buttonvets {
+    padding: 0.6rem;
+    font-size: 1.1rem;
+  }
+
+  .POSinfo h3 {
+    font-size: 1.4rem;
+  }
+
+  .POSinfo p {
+    font-size: 1.2rem;
+  }
+
+  .POSinfo a {
+    font-size: 1.2rem;
+  }
+
+  .logoOral img {
+    width: 70%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.States.animate {
+  animation: fadeIn 0.3s ease-in-out;
+}
+.boneIcon {
+  text-align: center;
+  font-size: 4rem; /* Make it big */
+  color: green; /* Make it green */
+  position: relative; /* Required for animation */
+  animation: float 2s infinite; /* Apply floating animation */
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Move up */
+  }
+  100% {
+      transform: translateY(0); /* Move back to original position */
+  }
+}
+
+.HumanIcon {
+  text-align: center;
+  font-size: 4rem; /* Make it big */
+  color: green; /* Make it green */
+  position: relative; /* Required for animation */
+  animation: float 2s infinite; /* Apply floating animation */
+}
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* Move up */
+  }
+  100% {
+      transform: translateY(0); /* Move back to original position */
+  }
+}

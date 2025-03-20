@@ -1,0 +1,143 @@
+.SwiperHead{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.SwiperdivTitle{
+  margin-top: 2rem;
+  font-size: 3rem;
+  color: #000;
+}
+
+.SwiperLink{
+  display: flex;
+  justify-content: flex-end ;
+  font-weight: bold;
+  color: #7a7575;
+  cursor: pointer;
+}
+
+.SwiperLink:hover {
+  color: #0c0c0c;
+}
+
+/* Swiper Container */
+.productSwiper {
+  position: relative;
+  width: 1300px;
+  margin: 2rem auto;
+  
+}
+
+/* Swiper Slides */
+.SwiperSlide {
+  display: flex;
+  justify-content: center;
+  scroll-snap-align: start;
+  padding: 1rem;
+}
+
+.ProductGrid {
+  position: relative;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProductGridcontainer {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(200px, 1fr)); /* Auto-fill items and create responsive columns */
+  gap: 2.5rem; /* Add space between grid items */
+  justify-items: center; /* Center items horizontally in their grid cells */
+  align-items: center; /* Center items vertically in their grid cells */
+  justify-content: center; /* Center the entire grid within the container */
+  
+}
+/* Adjust to 3 items per row on medium-sized screens */
+@media (max-width: 1200px) {
+.ProductGridcontainer {
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+}
+}
+
+/* Adjust to 2 items per row on smaller screens */
+@media (max-width: 900px) {
+.ProductGridcontainer {
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+}
+}
+
+/* Adjust to 1 item per row on mobile screens */
+@media (max-width: 600px) {
+.ProductGridcontainer {
+  grid-template-columns: 1fr;
+}
+}
+
+
+.Product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 250px; /* Ancho mínimo */
+  max-width: 250px; /* Ancho máximo */
+  padding: 1rem; /* Espaciado interno ajustado */
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave y profesional */
+  background-color: white;
+  text-align: center;
+  scroll-snap-align: start;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.Product:hover {
+  transform: translateY(-5px); /* Efecto flotante más sutil al hacer hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada al hacer hover */
+}
+
+.productImage {
+  width: 100%;
+  height: 200px; /* Altura ajustada de la imagen */
+  object-fit:contain; /* Mantiene la proporción de la imagen */
+  border-radius: 10px; /* Bordes redondeados para la imagen */
+  margin-bottom: 0.5rem; /* Espaciado ajustado */
+  transition: transform 0.3s ease-in-out;
+}
+
+.productImage:hover {
+  transform: scale(1.05); /* Efecto de zoom suave al hacer hover en la imagen */
+}
+
+
+.customButton {
+  z-index: 1000; /* Ensure it's above other elements */
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 1rem; /* More compact spacing */
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 20%; /* Rounded arrows */
+}
+
+.prevButton {
+  left: -50px;
+}
+
+.nextButton {
+  right: -50px;
+}
+
+.customButton:hover {
+  background-color: rgba(0, 0, 0, 0.9); /* Darker background on hover */
+}

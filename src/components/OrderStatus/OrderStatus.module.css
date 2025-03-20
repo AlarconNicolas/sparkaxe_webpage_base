@@ -1,0 +1,70 @@
+.order-status {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status-item {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  flex: 1;
+}
+
+.status-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  position: relative;
+  z-index: 2;
+}
+
+.status-container-bar {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  background-color: lightgray;
+  z-index: 0;
+}
+.status-container-bar-progress{
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 4px;
+  background-color: var(--green);
+  z-index: 1;
+}
+
+.status-label {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+/* .status-item.active~.status-item .status-circle {
+  background-color: lightgray;
+} */
+.status-item.active .status-circle {
+  background-color: var(--green);
+  /* Green color for active stages */
+  color: white;
+}
+.status-item.active .status-label{
+    color: var(--green);
+}

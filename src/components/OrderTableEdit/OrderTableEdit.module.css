@@ -1,0 +1,51 @@
+.OrderList {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table {
+    width: 80%;
+    max-width: 80rem;
+    border-collapse: collapse; /* Merge borders for a cleaner look */
+    border-radius: 10px;
+    border-collapse: separate; /* Prevents cells from collapsing */
+    overflow: hidden; /* Ensures content stays within the rounded borders */
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave y profesional */
+    background-color: white;
+
+}
+.table td span{
+    font-weight: bold ;
+}
+.table th, .table td {
+    padding: 8px; /* Padding for cells */
+    text-align: left; /* Align text to the left */
+}
+
+.table th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+}
+
+.OrderProduct {
+    /* Optional: Add styles for each product row */
+}
+
+.productImage {
+    width: 50px; /* Set image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.deleteButton {
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.deleteButton:hover {
+    color: darkred;
+}
